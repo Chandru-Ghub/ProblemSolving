@@ -67,3 +67,4 @@ function factorial(n){
     return sum
 }
 console.log(factorial(9))
+
