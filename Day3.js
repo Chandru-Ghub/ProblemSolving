@@ -26,7 +26,7 @@ function factorialRecursion(num){
     return num * factorialRecursion(num-1)
 }
 
-console.log(factorialRecursion(5))
+console.log('factorial',factorialRecursion(5))
 
 
 // Problem 3
@@ -36,4 +36,23 @@ function sumofArrayRecursion(arr){
 
     return arr[0]+ sumofArrayRecursion(arr.slice(1))
 }
-console.log(sumofArrayRecursion([1,2,3,4,5,6,7]))
+console.log('sum of array',sumofArrayRecursion([1,2,3,4,5,6,7]))
+
+
+// Problem 4
+
+function revStrRecursion(str){
+    if(str == '') return ''
+    return revStrRecursion(str.substring(1)) + str.charAt(0)
+}
+let res = revStrRecursion('hello')
+console.log('reverse string>>',res)
+
+
+// Problem 5
+function power(base,pow){
+    if(pow == 0) return 1
+    return base * power(base,pow-1)
+}
+let pw = power(2,5)
+console.log('power',pw)
