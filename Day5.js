@@ -49,3 +49,13 @@ function binarySearch(arr, target) {
   } else {
     console.log('Target found at index', result);
   }
+
+
+//   QUESTION 3
+
+// Big O notation is a mathematical notation that describes an algorithm's time complexity by analyzing its worst-case scenario.
+//  It is also used to classify algorithms by how their space requirements and run time grow as the input size increases.
+
+// Linear search has a time complexity of O(n), while binary search has a time complexity of O(log n). 
+// Linear search is simpler than binary search, making it easier to understand and implement. 
+// Linear search examines each element one by one, while binary search eliminates half of the search space with each step.
